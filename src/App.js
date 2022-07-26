@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import { BrowserRouter as Router, Route } from "react-router-dom";
+
+import Header from "./classComponents/Header/Header";
+import Footer from "./classComponents/Footer/Footer";
+import AlertSec from "./classComponents/AlertSec/AlertSec";
+import FirstSec from "./classComponents/FirstSec/FirstSec";
+import SecondSec from "./classComponents/SecondSec/SecondSec";
+import ThirdSec from "./classComponents/ThirdSec/ThirdSec";
+import FourthSec from "./classComponents/FourthSec/FourthSec";
+import FifthSex from "./classComponents/FifthSec/FifthSex";
+import SixthSec from "./classComponents/SixthSec/SixthSec";
+import YoutubeVideos from "./classComponents/YouTube/YoutubeVideos";
+
+class App extends Component {
+  render() {
+    return (
+      <div>
+        {/* <router> */}
+        {/* <Route path="/mac" exact component={Mac} /> */}
+        <Header />
+        {/* </router> */}
+        <AlertSec />
+        <FirstSec />
+        <SecondSec />
+        <ThirdSec />
+        <FourthSec />
+        <FifthSex />
+        <SixthSec />
+        <YoutubeVideos />
+        <Footer />
+      </div>
+    );
+  }
 }
-
 export default App;
